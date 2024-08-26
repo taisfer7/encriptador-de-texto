@@ -1,0 +1,173 @@
+:root{
+    --color-primario:#FEF6FB;
+    --color-secundario:#101010;
+    --color-terciario: #D77FA1;
+    --color-forth: #D6E5FA;
+    --color-fifth: #343A40;
+    --color-sixth: #828283;
+    --color-seventh: #F2F4F6;
+
+    --fuente-inter:"Inter", sans-serif;
+}
+
+
+* {
+    padding: 0;
+    margin: 0; 
+    font-family: var(--fuente-inter);
+}
+
+body{
+    background: var(--color-forth);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo-encriptador{
+    padding-top: 30px;
+    margin-left: 39px;
+    width: 3%;
+}
+
+main{
+    display: flex;
+    margin-left: 170px;
+    gap: 80px;
+    padding-bottom: 40px;
+}
+
+.text-area{
+    border: none;
+    color: var( --color-secundario);
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 70%;
+    height: 360px;
+    text-transform: lowercase;
+    font-size: 24px;
+    font-weight: 400;
+    background: var(--color-forth);
+    /* line-height --> la altura de la casilla/línea de una línea de texto */
+    line-height: 50px;
+    resize: none; 
+}
+
+::placeholder {color: var(--color-secundario);}
+/* focus (outline) -> para quitar el cuadro que tienen el placeholder */
+    .text-area:focus{ 
+        outline:none; 
+} 
+
+
+.container-muneco{
+    background: var(--color-primario);
+    border: none;
+    border-radius: 24px;
+    color: var(--color-fifth);
+    padding: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 310px;
+    text-align: center;
+    height: 525px;
+}
+
+.container-muneco img{
+    width: 278px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    background: var(--color-primario);;
+    background-repeat: no-repeat;
+}
+
+.mensaje-placeholder{
+    text-align: center;
+}
+
+.mensaje-placeholder p{
+    color: #999;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.mensaje{
+    width: 310px;;
+    height: 460px;
+    font-size: 18px;
+    resize: none; 
+    background: var(--color-primario);
+    border: none; 
+}
+
+.hidden{
+    display: none;
+}
+
+.mensaje:focus { 
+    outline: none; 
+} 
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+    font-size: 16px;
+}
+
+.btn-encriptar{
+    background-color: var(--color-terciario) ;
+    border: 1px solid var(--color-terciario);
+    border-radius: 24px;
+    color:var(--color-seventh);
+    cursor: pointer;
+    height: 55px;
+    width: 310px;
+    box-shadow: 4px 5px 4px var(--color-sixth);
+}
+
+.btn-desencriptar{
+    background: var(--color-seventh);
+    border: 1px solid var(--color-seventh);
+    border-radius: 24px;
+    color: var(--color-terciario);
+    cursor: pointer;
+    height: 55px;
+    margin-left: 30px;
+    width: 310px;
+    box-shadow: 4px 5px 4px var(--color-sixth);
+}
+
+.btn-copiar{
+    border: 1px solid var(--color-seventh);
+    border-radius: 24px;
+    color: var(--color-terciario);
+    cursor: pointer;
+    height: 55px;
+    margin-left: 2px;
+    width: 310px;
+    font-size: 16px;
+    box-shadow: 4px 5px 4px var(--color-sixth);
+}
+
+.alerta{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    margin-top: 94px;
+}
+
+.instrucciones{
+    color: var(--color-fifth);
+    font-size: 12px;
+}
+
+.alerta img{
+    width: 16px;
+}
+
+
+a{
+    color: var(--color-secundario);
+    font-size: 7px;
+    font-family: var(--fuente-inter);
+    text-decoration: none;
+}  
